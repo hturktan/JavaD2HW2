@@ -9,20 +9,21 @@ public class classesWithAttributes {
 		// attribute | field deniyor.
 		
 		Product product = new Product();
-		product.name = "Laptop";
-		product.id = 1;
-		product.description = "Asus Laptop";
-		product.price = 5000;
-		product.stockAmount = 3;
+		product.setName("Laptop");
+		//product.id = 1;
+		product.setId(1); // set den sonra bu þekilde yazýldý. Kullaným buna doðru deðiþti. 
+		product.setDescription("Asus Laptop");
+		product.setPrice(5000);
+		product.setStockAmount(3);
 		
 		
 		ProductManager productManager = new ProductManager();
 		productManager.Add(product);
-		
-		
 		//System.out.println(product.name); ihtiyaç ProductManager dan sonra gerek kalmadý.
 		
-		// 
+		System.out.println(product.getKod());
+		
+		
 	}
 
 }
