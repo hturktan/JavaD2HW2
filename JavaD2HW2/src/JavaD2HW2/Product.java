@@ -7,6 +7,22 @@ public class Product {
 	// ProductManager yönetiyor, ekle ya da sil gibi. 
 	// Product ise ürüne özeldir. Ürünü anlatan özellikler ekran boyutu, RAM gibi. 
 	
+	//Constructor: her class ta vardýr. Default olarak bulunur. Arzu edilirse, yenilenebilir. 
+	
+	public Product(int id, String name, String description, double price, int stockAmount, String renk) {
+		// Product(içi doldurulursa main içinde çaðrýldýðýnda, içine bilgileri ister)
+		System.out.println("Constructor çalýþtý.");
+		this.id = id;
+		this.renk = renk;
+		this.name = name;
+		this.price = price;
+		this.description = description;
+		this.stockAmount = stockAmount;
+		// this eklenerek, alttaki private kýsmýndakileri set etmiþ olduk. 
+		// Hata vermesinin nedeni, name set deðildi. this ile set oldu. 
+		
+	}
+	
 	private int id; // ürünü tanýmlayan eþsiz deðer. 2 isim ayný olabilir ama TC onlarý ayýrýr. 
 	private String name;
 	private String description;
