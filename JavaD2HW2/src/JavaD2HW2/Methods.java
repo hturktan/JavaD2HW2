@@ -43,6 +43,6 @@ public class Methods {
 	}
 	
 	public static String sehirVer() {
-		return Ankara;
+		return "Ankara";
 	}
 }
